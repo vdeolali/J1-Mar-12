@@ -1,0 +1,21 @@
+public class Retirement{
+   
+    public static void main (String[] args){
+	int  age = 30;
+	double  salary = 30000.0;
+	int Contrib=0 , Cumul=0;
+	int limit =0; 
+
+	System.out.print ("______________________________________________________________________________________" + "\n" + "\n"+
+			  "Age\t" + "Salary($)\t" + "Limit(%)\t" + "Contribution($) \t" + "Cumul. Contribution ($)"+ "\n" + 
+			  "______________________________________________________________________________________" +"\n" );
+    
+	do {
+	   
+
+	    System.out.println (age + "\t" + salary + "\t \t" + limit + "\t \t "+ Contrib + "\t \t \t "+ Cumul);
+	    age += 1; 
+	} while (age < 61);
+
+	}
+}

@@ -1,0 +1,8 @@
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class myNumberFormat{
+    public static void main(String[] args){
+	NumberFormat currency  = NumberFormat.getCurrencyInstance();
+    }
+}

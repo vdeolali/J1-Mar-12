@@ -1,0 +1,3 @@
+class TestStudent {
+    Student  stu = new Student(100, "John", "Smith");
+}

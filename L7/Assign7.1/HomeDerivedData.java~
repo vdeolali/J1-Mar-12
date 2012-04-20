@@ -1,0 +1,24 @@
+public class HomeDerivedData {
+    double value;
+    double commission;
+
+    HomeDerivedData (double value, double commission){
+	
+    }
+
+    public double getValue(){
+	return value; 
+    }
+
+    public double getCommission(){
+	return commission; 
+    }
+
+     public void  setValue(double val){
+	 value = value; 
+    }
+
+    public void setCommission (double com){
+	commission = com; 
+    }
+}

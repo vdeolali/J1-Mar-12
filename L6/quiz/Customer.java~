@@ -1,0 +1,10 @@
+class Customer
+{
+    String firstName;
+    String lastName;
+    static String concatName()
+    {
+        String strResult = lastName + ", " + firstName;
+        return strResult;
+    }
+}

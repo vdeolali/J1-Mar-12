@@ -1,0 +1,17 @@
+public class GDPPerCapita {
+
+    public static void main (String[] args){
+	int gdp = 175000;
+	int population = 4000;
+	double gdpPerCapita = (double) (GDP/population);
+	int gdpPerCapitaDollars = (int) gdpPerCapita;
+	int gdpPerCapitaCents = 100* (gdpPerCapitaDollars - gdpPerCapitaCents);
+
+	System.out.println("GDP:"+gdp"\n"+
+			   "Population:"+population"\n"+
+			   "GDP Per Capita:"+gdpPerCapita"\n"+
+			   "GDP Per Capita:"+gdpPerCapitaDollars+"Dollars" + "   " + "and" +gdpPerCapitaCents+"Cents");
+	
+    }
+
+}

@@ -1,0 +1,25 @@
+class GPA
+{
+    public static void main(String[] args)
+    {
+        int[] points = {3, 4, 2, 3}; 
+        // 'gpa' is a method-level variable
+        // (recognized only inside 'main' method)
+        double gpa = computeGPA(points);
+        System.out.println(" GPA = " + gpa);
+    }
+
+    static double computeGPA(int[] gradePoints)
+    { 
+        // 'sum' is a method-level variable
+        // (recognized only inside 'computeGPA' method)
+        double sum = 0.0;
+
+        for (int i = 0; i < gradePoints.length; i++)
+        {
+            sum += gradePoints[i];
+        }
+        double gpa = sum / gradePoints.length;
+        return gpa;
+    }
+}

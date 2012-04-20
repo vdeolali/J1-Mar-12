@@ -1,0 +1,21 @@
+public class Student{
+	public static void main(String[] args) {
+
+	//Declare and initialize variables
+
+	int studentID = 101; 
+
+	String firstName ="John", lastName ="Smith";
+
+	String courseID1 = "CS101";
+	String courseID2 = "CS102";
+	String courseID3 = "CS103";
+	String courseID4 = "CS104";
+
+	char studentGrade1=4.0, studentGrade2=3.0, studentGrade3=4.0, studentGrade4=3.0;
+
+	double gradePoints1 =4.0
+
+	}
+
+}

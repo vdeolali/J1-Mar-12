@@ -1,0 +1,4 @@
+public class TestHome {
+    Home home = new Home(SINGLE_FAMILY,15, 2000); 
+
+}

@@ -1,0 +1,61 @@
+public class Home {
+
+	int homeType;
+	int age;
+	int sqft;
+	HomeDerivedData hd;
+	Home nextHome;
+
+	Home (int homeType, int age, int sqft){
+		HomeUtil hu = new HomeUtil();
+		this.homeType = homeType;
+		this.age = age;
+		this.sqft = sqft;
+		hu.computeDerivedData();
+		this.nextHome = null;
+    }
+
+	public class HomeUtil {
+		HomeDerivedData hd = new HomeDerivedData(0.0, 0.0);
+		public void computeDerivedData (){
+			switch (homeType) {
+			case 1:
+				hd.setValue ((30.0*(20-age)*sqft));
+				hd.setCommission (.06);
+				break;
+			case 2:
+				hd.setValue ((20.0*(15-age)*sqft));
+				hd.setCommission (.05);
+				break;
+			case 3:
+				hd.setValue ((10.0*(10-age)*sqft));
+				hd.setCommission (.04);
+				break;
+			}
+		}
+	}
+	
+	int getHomeType () {
+		return homeType;
+	}
+
+	int getAge () {
+		return age;
+	}
+
+	int getSqft () {
+		return sqft;
+	}
+
+	HomeDerivedData getHd(){
+		return (this.hd);
+	}
+
+	Home getNextHome(){
+		return (this.nextHome);
+	}
+
+	void setNextHome(Home nextHome){
+		this.nextHome = nextHome;
+	}
+}

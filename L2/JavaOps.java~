@@ -1,0 +1,10 @@
+public class JavaOps {
+
+	public JavaOps {
+		int x, y = 10, z = 5; 
+
+	x = ++z; 
+
+	System.out.println ("++ means" +x + z);
+	}
+}

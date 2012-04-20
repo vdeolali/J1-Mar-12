@@ -1,0 +1,16 @@
+public class Course{
+
+    String  courseId;
+    String  courseTitle;
+    int     creditHours;
+
+    Course (){
+	courseId = "";
+	courseTitle = "";
+	creditHours = 0;
+    }
+
+    Course (String courseId, String courseTitle, int creditHours){
+
+    }
+}

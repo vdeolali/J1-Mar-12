@@ -1,0 +1,42 @@
+public class Weather{
+
+    public static void main (String[] argc){
+	int   i =1;
+	double temp = 0.0;
+	final double ANNUAL_INCREASE = 1.0;
+	double uncertainty = 0.0;
+	String result="";
+
+	System.out.println ("Year \t Jan Feb Mar Apr May Jun Aug Sep Oct Nov Dec");
+
+	while (true){
+	    if (i == 3) continue; 
+	    else if (i > 5) break;
+	    else {
+		switch (i){
+		    case 1:
+			uncertainty = 2.1 ;
+			for (int j = 1; j < 13; j++){
+			    if (j == 1 || j == 2 || j ==11 || j == 12)?
+			       (temp = j +3): (temp = 5*j + 7);
+
+		        temp += uncertainty*temp/100.0; 
+			}
+		    case 2:
+			uncertainty = 4.3 ;
+		    case 4:
+			uncertainty = 7.4 ;
+		    case 5:
+			uncertainty = 8.6 ;
+		}
+		// means i is not 3 and less than 5 
+
+	
+	}
+	 
+
+	}
+	
+    }
+
+}
